@@ -1,12 +1,10 @@
 import pygame
 import os
 
-# Inicializando o Pygame
 pygame.init()
 
-# Definindo o tamanho da janela padrão
 WIDTH, HEIGHT = 720, 360
-screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)  # Janela redimensionável
+screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE) 
 pygame.display.set_caption("Mover Imagem com Setas")
 
 # Definindo a cor de fundo (usada se não houver imagem de fundo)
