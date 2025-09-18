@@ -9,7 +9,7 @@ pygame.display.set_caption("Janela com Imagem")
 
 BG_COLOR = (30, 30, 40) 
 
-image_file = "GAME\\player.png"
+image_file = "player.png"
 
 if os.path.exists(image_file):
     img = pygame.image.load(image_file).convert_alpha()

@@ -34,7 +34,7 @@ else:
     target_img = None
     target_rect = pygame.Rect(WIDTH // 2 + 200, HEIGHT - 50, TARGET_WIDTH, TARGET_HEIGHT)
 
-background_file = "background.png"
+background_file = "background.jpg"
 if os.path.exists(background_file):
     background_orig = pygame.image.load(background_file).convert()
     background = pygame.transform.scale(background_orig, (WIDTH, HEIGHT))

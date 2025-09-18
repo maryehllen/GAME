@@ -9,7 +9,7 @@ pygame.display.set_caption("Mover Imagem com Setas")
 
 BG_COLOR = (193, 0, 40)
 
-image_file = "GAME\\player.png"
+image_file = "player.png"
 if os.path.exists(image_file):
     img = pygame.image.load(image_file).convert_alpha()
     img_rect = img.get_rect(center=(WIDTH // 2, HEIGHT // 2)) 
@@ -18,7 +18,7 @@ else:
     img = None
     img_rect = pygame.Rect(WIDTH // 2, HEIGHT // 2, 50, 50)
 
-background_file = "GAME\\background.png"
+background_file = "background.jpg"
 if os.path.exists(background_file):
     background_orig = pygame.image.load(background_file).convert()
     background = pygame.transform.scale(background_orig, (WIDTH, HEIGHT))
